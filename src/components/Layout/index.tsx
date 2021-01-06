@@ -8,7 +8,7 @@ import styles from "./index.module.scss"
 import { Header } from "../Header"
 import { Footer } from "../Footer"
 
-const Layout = ({ children }: { children: ReactNode }): JSX.Element => (
+const Layout = ({ children }: { children: ReactNode }) => (
   <div className={styles.body}>
     <Header />
     <main className={styles.main}>{children}</main>

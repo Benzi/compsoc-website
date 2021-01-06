@@ -1,6 +1,23 @@
 $primary-colour: #202a30;
+$blurple: #7289DA;
 
 nav,
 .page-footer {
   background-color: #202a30;
+}
+
+.btn, .btn-small, .btn-large, .btn-flat {
+  // Disable autocapitalisation
+  text-transform: unset;
+
+  // Fix weird keming spacing between characters
+  letter-spacing: unset;
+}
+
+.blurple {
+  background-color: $blurple !important;
+
+  &.btn:hover {
+    background-color: lighten($blurple, 5%) !important;
+  }
 }

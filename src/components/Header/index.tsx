@@ -4,7 +4,7 @@ import { Icon, Navbar } from "react-materialize"
 import compsoc from "./compsoc.svg"
 import styles from "./index.module.scss"
 
-const Header = (): JSX.Element => {
+const Header = () => {
   return (
     <Navbar
       alignLinks="right"

@@ -1,13 +1,17 @@
-import React from "react";
-import { Container } from "react-materialize";
-import { Layout } from "../components/Layout";
+import React from "react"
+import { ComingEvents } from "../components/ComingEvents"
+import { HomepageJumbotron } from "../components/HomepageJumbotron"
+import { JoinCompSoc } from "../components/JoinCompSoc"
+import { Layout } from "../components/Layout"
+import { WhatDoWeDo } from "../components/WhatDoWeDo"
 
 const HomePage = () => (
   <Layout>
-    <Container>
-      <h1>Welcome to CompSoc!</h1>
-    </Container>
+    <HomepageJumbotron />
+    <ComingEvents />
+    <WhatDoWeDo />
+    <JoinCompSoc />
   </Layout>
-);
+)
 
-export default HomePage;
+export default HomePage

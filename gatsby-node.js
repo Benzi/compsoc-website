@@ -57,7 +57,6 @@ exports.createPages = ({ actions, graphql, reporter }) => {
             frontmatter {
               is_public
               render
-              create_hacking_countdown_timer
             }
           }
         }
@@ -76,15 +75,6 @@ exports.createPages = ({ actions, graphql, reporter }) => {
         createPage({
           path: node.fields.slug,
           component: getTemplate(template),
-          context: node.fields,
-        })
-      }
-
-      // If requested, create a countdown timer for pages that request it.
-      if (node.frontmatter.create_hacking_countdown_timer) {
-        createPage({
-          path: node.fields.slug + "timer/",
-          component: getTemplate("timer"),
           context: node.fields,
         })
       }

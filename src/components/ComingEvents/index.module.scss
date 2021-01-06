@@ -1,0 +1,27 @@
+.event {
+  position: relative;
+
+  .eventContent {
+    position: relative;
+    padding: 1.5rem;
+    z-index: 2;
+    max-width: 70%;
+  }
+
+  .facade {
+    background-image: linear-gradient(to left, transparent, white);
+  }
+
+  .eventImage {
+
+  }
+
+  .eventImage, .facade {
+    position: absolute !important;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    z-index: 1;
+  }
+}
